@@ -1,0 +1,324 @@
+@font-face  {
+	font-family: 'pricedown';
+	src: url('assets/fonts/pricedown.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #1f0d45;
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+	overflow: hidden;
+}
+.menu-overlay {
+	position: absolute;
+	left: -140%;
+	top: 0;
+	width: 140%;
+	height: 100vh;
+	background-color: white;
+	opacity: 0.06;
+	animation: moveOverlay 10s infinite ease-in-out;
+}
+@keyframes moveOverlay {
+	0% {
+		left: -140%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+canvas {
+	position: absolute;
+	left: 0;
+	top: 0;
+	filter: none;
+	transition: filter 0.5s ease-in-out;
+}
+
+#respect {
+	color: white;
+	font-family: pricedown;
+}
+
+#mission-success {
+	color: #ffab00;
+	font-family: pricedown;
+}
+
+#level-end-top {
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgb(50, 50, 50);
+	padding: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-family: pricedown;
+	-webkit-text-stroke: 2px black;
+}
+
+
+
+.level-end-screen {
+	background-color: rgb(221, 221, 221);
+	padding: 80px;
+	font-size: 30px;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.level-end-div {
+	z-index: 10;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	min-width: 100vw;	
+	user-select: none;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.wasted {
+	position: absolute;
+	left: 0;
+	transition: all 0s linear;
+	-webkit-text-stroke: 3px black;
+	height: 200px;
+	min-width: 100vw;
+	margin-top: 400px;
+	color: red;
+	font-size: 100px;
+	background-color: rgba(0, 0, 0, 0.3);
+	user-select: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family:pricedown;
+}
+
+
+.wasted-hide {
+	z-index: -10000 !important;
+}
+
+#bottom-bar {
+	position: absolute;
+	bottom: 0;
+	height: 80px;
+	left: 0;
+	min-width: 100vw;
+	background-color: rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+
+#gun-inventory {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gun, .box {
+	width: 70px;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgb(31, 28, 26);
+	border: 3px solid rgb(24, 24, 24);
+	font-family: Nunito Sans, sans-serif;
+	background-color: rgba(151, 151, 151, 0.994);
+	margin-left: 10px;
+	font-size: 30px;
+	margin-right: 10px;
+	border-radius: 3px;
+}
+
+
+
+.coins{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: Nunito Sans, sans-serif;
+	margin-left: 60px;
+	font-size: 30px;
+}
+
+
+.coins-collected {
+	margin: 15px;
+}
+
+
+#coin {
+	width: 70px;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#level {
+	width: 150px;
+}
+.level-div {
+	color: white;
+	font-family: Nunito Sans, sans-serif;
+	margin-right: 100px;
+	font-size: 30px;
+}
+
+.gun-selected {
+	border: 6px solid rgb(216, 216, 216);
+}
+
+
+#menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+	color: rgb(215, 215, 215);
+}
+
+#gun-stats {
+	padding: 40px;
+	z-index: 3;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: Nunito Sans, sans-serif;
+	color: white;
+	font-size: 28px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	margin-right: 40px;
+    position: absolute;
+    right: 0;
+}
+
+#gun-name {
+	font-size: 40px;
+	margin-right: 20px;
+}
+
+
+
+
+#gui {
+	min-height: 100vh;
+	min-width: 100vw;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#time {
+	padding: 20px;
+	color: white;
+	font-size: 32px;
+    position: absolute;
+    left: 0;
+}
+
+#game {
+	display: flex;
+	background-color: rgb(72, 66, 87);
+}
+
+#title {
+	font-size: 3rem;
+	margin: 15px;
+  	user-select: none;
+}
+
+
+.hidden {
+	display: none !important;
+}
+
+
+button {
+	padding: 20px 100px;
+	margin: 10px;
+	color: rgb(181, 181, 181);
+	background-color: rgb(17, 17, 17);
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.15s linear;
+    font-size: 24px;
+	z-index: 3;
+}
+#info-button {
+	padding: 15px 40px;
+	filter: saturate(50%);
+}
+
+
+#play-button {
+	z-index: 200;
+}
+
+.info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 650px;
+	height: 400px;
+	color: rgb(225, 225, 225);
+	font-size: 1.1rem;
+}
+
+
+button:hover {
+	background-color: rgb(31, 31, 31);
+}
+
+#pause-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 4rem;
+	font-family: Nunito Sans, sans-serif;
+	user-select: none;
+}
+
+#pause-text {
+	margin-top: 100px;
+}

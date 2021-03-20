@@ -1,0 +1,79 @@
+{
+	"world": {
+		"width": 3000,
+		"height": 3000
+	},
+	"player": {
+		"x": 50,
+		"y": 50,
+		"type": "circle"
+	},
+	"portal": {
+		"x": 0,
+		"y": 0,
+		"width": 200,
+		"height": 200,
+		"type": "normal"	
+	},
+	"coins": [
+		{
+			"x": 1500,
+			"y": 1500
+		}
+	],
+	"enemySpawn": [{
+		"x": 1000,
+		"y": 1000,
+		"width": 1000,
+		"height": 1000,
+		"type": "boss",
+		"count": 1,
+		"show": false
+	},
+	{
+		"x": 200,
+		"y": 0,
+		"width": 2800,
+		"height": 3000,
+		"type": "bouncy",
+		"show": false,
+		"count": 5
+	},
+	{
+		"x": 200,
+		"y": 0,
+		"width": 2800,
+		"height": 3000,
+		"type": "aimbot",
+		"show": false,
+		"count": 4
+	},
+	{
+		"x": 200,
+		"y": 0,
+		"width": 2800,
+		"height": 3000,
+		"type": "shotgun",
+		"show": false,
+		"count": 3
+	}],
+	"obstacles": [{
+		"x": 200,
+		"y": 0,
+		"width": 5,
+		"height": 200
+	},
+	{
+		"x": 0,
+		"y": 200,
+		"width": 120,
+		"height": 5
+	}],
+    "text": [
+        {
+            "x": 100,
+            "y": -100,
+            "data": "Boss battle - good luck"
+        }
+    ]
+}

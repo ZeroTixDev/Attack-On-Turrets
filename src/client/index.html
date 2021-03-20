@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#4600b8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AOT</title>
+	<link rel="stylesheet" href="style.css">
+	<meta property="og:type" content="photo">
+    <meta property="og:url" content="https://shoot.zerotixdev.repl.co">
+    <meta property="og:title" content="Attack on Turrets">
+    <meta property="og:image"  content="https://shoot.zerotixdev.repl.co/assets/images/logo.png">
+    <meta name="author" content="ZeroTix">
+    <meta name="og:description" content="Epic shooter game made for repl game jam (developed by ZeroTix)">
+    <link rel="icon" href="https://shoot.zerotixdev.repl.co/assets/images/logo.png">
+	<!-- <script src="util/quadtree.min.js" defer></script> -->
+	<base href=".">
+	<script src="index.js" type="module" defer></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+</head>
+<body oncontextmenu="return false">
+	<div id="menu">
+		<div class="menu-overlay"></div>
+		<h1 id="title">Attack on Turrets</h1>
+		<button id="play-button">Play</button>
+		<button id="info-button">Info</button>
+		<div class="info hidden">
+			WOW, You actually clicked the button. There is music, turn up your volume but I dont own most of the music. Yay, here is something you wouldn't know if you didn't click the button... P TO PAUSE. Also the controls are WASD (arrow keys for some people..) and mouse to aim. :) If the turrets are glitching out that is because they don't have space. Try to beat the levels as fast as possible, umm yeah might add some more updates even after the jam if im bored also if you are super bored and still reading my message, you can also contact me on Discord if you want via ZeroTix#6300 to report bugs maybe if you want I guess. Ok good luck. :) Oh and did I mention that the code is completely open source haHAhAHAHhah game go BRRRR<br/>
+			<br/>
+			<br/>
+			- Main Developer:: ZeroTix	
+		</div>
+	</div>
+	<div id="game" class="hidden">
+		<canvas id="game-canvas"></canvas>
+		<div id="gui">
+			<div id="bottom-bar" class="hidden">
+				<div id="time">0.00s</div>	
+
+				<div class="level-div">
+					<span id="level">Level 1</span>
+				</div>
+
+				<div id="gun-inventory">
+					<img class="gun box gun-selected" src="assets/images/pistol.svg" alt="Pistol" /> 
+					<img class="gun box" src="assets/images/lock.png" alt="Locked" /> 
+					<img class="gun box" src="assets/images/lock.png" alt="Locked" /> 
+				</div>
+				
+				<div class="coins">
+					<img id="coin"src="assets/images/coin.svg" alt="Coin">
+					<span class="coins-collected">0/0</span>
+				</div>
+
+				<div id="gun-stats">
+					<!-- <span id="gun-name">Pistol</span> -->
+					<span id="gun-ammo">20/20</span>
+				</div>
+			</div>
+		</div>
+		<div class="level-end-div hidden">
+			<div class="level-end-screen" id="confetti">
+				<div id="level-end-top">
+					<h1 id="mission-success">Mission passed!</h1>
+					<h1 id="respect">respect+</h1>
+				</div>
+				<h1>Level <span id="current-level">1</span></h1>
+				<h1>Time: <span id="time-taken">0s</span></h1>
+				<h1>Deaths: <span id="deaths">0</span></h1>
+				<button id="next-level">Next Level -></button>
+			</div>
+		</div>
+		<div id="pause-overlay" class="hidden">
+			<span id="pause-text">Paused</span>
+		</div>
+		<div class="center">
+			<div class="wasted-hide wasted">
+				wasted
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

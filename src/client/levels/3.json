@@ -1,0 +1,99 @@
+{
+	"world": {
+		"width": 4000,
+		"height": 1100
+	},
+	"player": {
+		"x": 125,
+		"y": 75,
+		"type": "circle"
+	},
+	"portal": {
+		"x": 0,
+		"y": 0,
+		"width": 350,
+		"height": 150,
+		"type": "normal"
+	},
+	"coins": [
+		{
+			"x": 500, 
+			"y": 1050
+		},
+		{
+			"x": 3950,
+			"y": 50
+		},
+		{
+			"x": 2050,
+			"y": 50
+		}
+	],
+	"enemySpawn": [
+		{
+			"x": 0,
+			"y": 150,
+			"width": 350,
+			"height": 950,
+			"type": "basic",
+			"count": 2
+		},
+		{
+			"x": 1000,
+			"y": 0,
+			"width": 3000,
+			"height": 1100,
+			"type": "shotgun",
+			"count": 9
+		},
+		{
+			"x": 1000,
+			"y": 0,
+			"width": 3000,
+			"height": 1100,
+			"type": "bouncy",
+			"count": 11
+		}
+	],
+	"text": [
+		{
+			"x": -400,
+			"y": 400,
+			"data": "They kill you >:3"
+		},
+		{
+			"x": 2300,
+			"y": 1300,
+			"data": "Lol good luck"
+		}
+	],
+	"obstacles": [
+		{
+			"x": 350,
+			"y": 0,
+			"width": 650,
+			"height": 850
+		},
+		{
+			"x": 0,
+			"y": 400,
+			"width": 150,
+			"height": 50,
+			"type": "lava"
+		},
+		{
+			"x": 100,
+			"y": 600,
+			"width": 250,
+			"height": 50,
+			"type": "lava"
+		},
+		{
+			"x": 0,
+			"y": 800,
+			"width": 150,
+			"height": 50,
+			"type": "lava"
+		}
+	]
+}

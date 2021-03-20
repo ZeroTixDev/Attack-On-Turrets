@@ -1,0 +1,219 @@
+{
+	"world": {
+		"width": 4000,
+		"height": 3000
+	},
+	"player": {
+		"x": 400,
+		"y": 50,
+		"type": "circle"
+	},
+	"portal": {
+		"x": 350,
+		"y": 0,
+		"width": 150,
+		"height": 150,
+		"type": "normal"
+	},
+	"coins": [
+		{
+			"x": 1400, 
+			"y": 2150
+		},
+		{
+			"x": 1800, 
+			"y": 600
+		},
+		{
+			"x": 2900, 
+			"y": 100
+		}
+	],
+	"enemySpawn": [
+		{
+			"x": 850,
+			"y": 850,
+			"width": 150,
+			"height": 150,
+			"type": "fire",
+			"count": 1,
+			"show": false
+		},
+		{
+			"x": 150,
+			"y": 450,
+			"width": 150,
+			"height": 150,
+			"type": "fire",
+			"count": 1,
+			"show": false
+		},
+		{
+			"x": 850,
+			"y": -150,
+			"width": 150,
+			"height": 150,
+			"type": "fire",
+			"count": 1,
+			"show": false
+		},
+		{
+			"x": 1850,
+			"y": 0,
+			"width": 150,
+			"height": 150,
+			"type": "fire",
+			"count": 1,
+			"show": false
+		},
+		{
+			"x": 1850,
+			"y": 400,
+			"width": 150,
+			"height": 150,
+			"type": "fire",
+			"count": 1,
+			"show": false
+		},
+		{
+			"x": 1850,
+			"y": 800,
+			"width": 150,
+			"height": 150,
+			"type": "fire",
+			"count": 1,
+			"show": false
+		},
+		{
+			"x": 1850,
+			"y": 1200,
+			"width": 150,
+			"height": 150,
+			"type": "fire",
+			"count": 1,
+			"show": false
+		},
+		{
+			"x": 1850,
+			"y": 1400,
+			"width": 150,
+			"height": 150,
+			"type": "fire",
+			"count": 1,
+			"show": false
+		},{
+			"x": 1850,
+			"y": 1600,
+			"width": 150,
+			"height": 150,
+			"type": "fire",
+			"count": 1,
+			"show": false
+		},
+		{
+			"x": 1850,
+			"y": 1800,
+			"width": 150,
+			"height": 150,
+			"type": "fire",
+			"count": 1,
+			"show": false
+		},
+		{
+			"x": 450,
+			"y": 2175,
+			"width": 150,
+			"height": 150,
+			"type": "fire",
+			"count": 1,
+			"show": false
+		},
+		{
+			"x": 900,
+			"y": 2675,
+			"width": 150,
+			"height": 150,
+			"type": "fire",
+			"count": 1,
+			"show": false
+		},
+		{
+			"x": 50,
+			"y": 2100,
+			"width": 1400,
+			"height": 750,
+			"type": "bouncy",
+			"count": 4,
+			"show": false
+		},
+		{
+			"x": 2200,
+			"y": 0,
+			"width": 1800,
+			"height": 3000,
+			"type": "shotgun",
+			"count": 20,
+			"show": false
+		}
+	],
+	"text": [
+		{
+			"x": 300,
+			"y": 800,
+			"data": "Fire is really dangerous"
+		},
+		{
+			"x": 2400,
+			"y": 3200,
+			"data": "Shotgun go BRRRR"
+		}
+	],
+	"obstacles": [
+		{
+			"x": 0,
+			"y": 700,
+			"width": 1500,
+			"height": 1350
+		},
+		{
+			"x": 0,
+			"y": -400,
+			"width": 2200,
+			"height": 400
+		},
+		{
+			"x": 2000,
+			"y": 0,
+			"height": 2900,
+			"width": 200
+		},
+		{
+			"x": 1450,
+			"y": 1550,
+			"height": 1350,
+			"width": 50,
+			"type": "lava"
+		},
+		{
+			"x": 200,
+			"y": 2850,
+			"height": 50,
+			"width": 1250,
+			"type": "lava"
+		},
+		{
+			"x": 0,
+			"y": 2050,
+			"height": 50,
+			"width": 1450,
+			"type": "lava"
+		},
+		{
+			"x": 0,
+			"y": 2100,
+			"height": 900,
+			"width": 50,
+			"type": "lava"
+		}
+	]
+}

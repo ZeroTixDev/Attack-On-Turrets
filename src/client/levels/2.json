@@ -1,0 +1,92 @@
+{
+	"world": {
+		"width": 3000,
+		"height": 1500
+	},
+	"player": {
+		"x": 50,
+		"y": 50,
+		"type": "circle"
+	},
+	"portal": {
+		"x": 1450,
+		"y": 700,
+		"width": 100,
+		"height": 100,
+		"type": "normal"
+	},
+	"coins": [
+		{
+			"x": 100, 
+			"y": 1200
+		},
+		{
+			"x": 1200,
+			"y": 600
+		},
+		{
+			"x": 2900,
+			"y": 1200
+		}
+	],
+	"enemySpawn": [
+		{
+			"x": 0,
+			"y": 0,
+			"width": 3000,
+			"height": 1500,
+			"type": "bouncy",
+			"count": 25
+		},
+		{
+			"x":0,
+			"y":1000,
+			"width":200,
+			"height":500,
+			"type": "turret",
+			"count": 5
+		},
+		{
+			"x":2800,
+			"y":1000,
+			"width":200,
+			"height":500,
+			"type": "turret",
+			"count": 5
+		},
+		{
+			"x":1300,
+			"y":550,
+			"width":400,
+			"height":400,
+			"type": "turret",
+			"count": 5
+		}
+	],
+	"text": [
+		{
+			"x": 1400,
+			"y": 1200,
+			"data": "These are really bouncy"
+		},
+		{
+			"x": -50,
+			"y": -150,
+			"data": "Now you are on your own"
+		}
+	],
+	"obstacles": [
+		{
+			"x": 100,
+			"y": 0,
+			"width": 2950,
+			"height": 100
+		},
+		{
+			"x": 200,
+			"y": 1000,
+			"width": 2600,
+			"height": 550
+		}
+	]
+}
